@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <h2 class="logo">Hi, Admin</h2>
+      <ul>
+        <li class="navlink Active"><a href="#">/Profile</a></li>
+        <li class="navlink"><a href="song_listing.html">/Song Listing</a></li>
+        <li class="navlink"><a href="album_preview.html">/Album Preview</a></li>
+      </ul>
+    </div>
+    <div class="bg"></div>
+
+    <!-- admin -->
+    <div class="admin-page">
+      <div class="container">
+        <h2 style="text-align: center; padding-top: 20px">Its Your Profile Page</h2>
+        <div class="kotak-dialog">
+          <div class="kiri">
+            <img src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg" alt="" style="margin-left: 20px" />
+          </div>
+          <div class="kanan">
+            <table>
+              <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td>Dimas Eka Putra</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>dimaseka@mail.com</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>:</td>
+                <td>62813456789</td>
+              </tr>
+              <tr>
+                <td>Status Account</td>
+                <td>:</td>
+                <td>Premium</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- <table>
+          <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td>Dimas Eka Putra</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>dimaseka@mail.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>:</td>
+            <td>62813456789</td>
+          </tr>
+          <tr>
+            <td>Status Account</td>
+            <td>:</td>
+            <td>Premium</td>
+          </tr>
+        </table> -->
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* navbar */
+      .navbar {
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(48, 47, 47);
+        color: white;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .navbar ul li {
+        padding: 0 20px;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar .Active {
+        background-color: rgb(70, 70, 70);
+      }
+
+      /* content */
+      table {
+        border-spacing: 30px;
+      }
+
+      .admin-page {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        /* background-color: #fafafa; */
+      }
+      .container {
+        position: absolute;
+        margin-top: -400px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        width: 700px;
+        background-color: white;
+        /* height: ; */
+      }
+      .bg {
+        position: relative;
+        height: 400px;
+        z-index: -1;
+        background-color: rgb(144, 144, 144);
+      }
+      .kiri img {
+        width: 200px;
+        width: 200px;
+      }
+      .kotak-dialog {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </body>
+</html>

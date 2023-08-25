@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song List Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <h2 class="logo">Hi, Admin</h2>
+      <ul>
+        <li class="navlink"><a href="profile.html">/Profile</a></li>
+        <li class="navlink Active"><a href="#">/Song Listing</a></li>
+        <li class="navlink"><a href="album_preview.html">/Album Preview</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <div class="song-list">
+      <div class="container-song">
+        <h1>This Is Your Song List</h1>
+        <br />
+        <table border="1" cellspacing="0">
+          <tr>
+            <th>Image</th>
+            <th>Song Title</th>
+            <th>Duration</th>
+            <th>Artist</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="/Assets/img/smoga.jpg" alt="Lagu 1" /><br />
+              <audio src="../Assets/music/Semoga Ya - Guna Warma - Ini Bukan Nosstress (Official Video).mp3" controls></audio>
+            </td>
+            <td>Semoga Ya</td>
+            <td>03.48</td>
+            <td>Nosstress</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/Assets/img/download.jpeg" alt="Lagu 2" />
+              <br />
+              <audio src="../Assets/music/Istirahat (1).mp3" controls></audio>
+            </td>
+            <td>Istirahat</td>
+            <td>03.35</td>
+            <td>Nosstress</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/Assets/img/pegang.jpg" alt="Lagu 3" />
+              <br />
+              <audio src="../Assets/music/Pegang Tanganku Nosstress X Guswib Live session.mp3" controls></audio>
+            </td>
+            <td>Pegang Tanganku</td>
+            <td>05.39</td>
+            <td>Nosstress</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/Assets/img/redbone.jpg" alt="Lagu 4" />
+              <br />
+              <audio src="../Assets/music/Redbone - Come and Get Your Love (Single Edit - Audio).mp3" controls></audio>
+            </td>
+            <td>Come And Get Your Love</td>
+            <td>03.28</td>
+            <td>Redbone</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* navbar */
+      .navbar {
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(48, 47, 47);
+        color: white;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .navbar ul li {
+        padding: 0 20px;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar .Active {
+        background-color: rgb(70, 70, 70);
+      }
+
+      /* content */
+      table {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .song-list {
+        padding-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <h2 class="logo">Dimas</h2>
+      <ul>
+        <li class="navlink Active"><a href="#">/Home</a></li>
+        <li class="navlink"><a href="HTML/about.html">/About</a></li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <div class="wellcome">
+        <h1>Hi And Wellcome To Our Website</h1>
+        <p>
+          Welcome to this website, you can find some features that you can use if you need them. we also have some of the services that you
+          might need, ranging from free to paid. between free and paid, of course, there is a difference between the two. We hope you are
+          satisfied with the services we provide.We are delighted to invite you to explore the world of creativity and innovation through
+          our website. Here, you will discover design and web development solutions that transform concepts into digital realities. Every
+          page you navigate reflects our dedication to visual beauty and exceptional functionality.
+        </p>
+      </div>
+      <div class="pricing">
+        <div class="price_one">
+          <h2>Personal Version</h2>
+          <p class="price_mo">Rp 0/month</p>
+          <p class="desc">Free version is for you if you wanna try fitur on this site and try ekspreience.</p>
+          <div class="button">
+            <button onclick="location.href='HTML/register.html'">Register</button>
+          </div>
+        </div>
+        <div class="price_two">
+          <h2>Premium Version</h2>
+          <p class="price_mo">Rp 250.000/month</p>
+          <p class="desc">premium version is for you if you have some money and interest with this site and fitur</p>
+          <div class="button">
+            <button onclick="location.href='HTML/register.html'">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* navbar */
+      .navbar {
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(48, 47, 47);
+        color: white;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .navbar ul li {
+        padding: 0 20px;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar .Active {
+        background-color: rgb(70, 70, 70);
+      }
+
+      /* content */
+      .content {
+        padding: 0 100px;
+        background-color: #fafafa;
+        height: 900px;
+      }
+      .wellcome {
+        padding: 50px 0;
+        text-align: center;
+      }
+      .wellcome p {
+        padding: 10px 200px;
+      }
+      .price_one {
+        background-color: white;
+        padding: 20px 0;
+        height: 350px;
+        width: 300px;
+        border: 3px solid rgb(98, 98, 98);
+        text-align: center;
+        border-radius: 10px;
+      }
+      .price_two {
+        background-color: white;
+        padding: 20px 0;
+        height: 350px;
+        width: 300px;
+        border: 3px solid rgb(98, 98, 98);
+        text-align: center;
+        border-radius: 10px;
+      }
+      p.price_mo {
+        background-color: white;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      p.desc {
+        background-color: white;
+        margin-top: 100px;
+      }
+      button {
+        padding: 10px 30px;
+        background-color: rgb(48, 47, 47);
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .button button {
+        margin-top: 30px;
+      }
+      .pricing {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: aqua; */
+        padding: 0 500px;
+      }
+    </style>
+  </body>
+</html>

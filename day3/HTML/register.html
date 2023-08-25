@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="form-sec">
+        <table>
+          <form action="/HTML/profile.html">
+            <h2>Hi, Please Register!</h2>
+            <tr>
+              <td><label for="name">Name</label></td>
+              <td><input required type="text" name="name" placeholder="Please Input Your Name" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td><input required type="email" name="email" id="email" placeholder="youremail@mail.com" /></td>
+            </tr>
+            <tr>
+              <td><label for="telephone">Telephone</label></td>
+              <td><input required type="tel" name="telephone" id="telephone" pattern="\62\d{10,12}" /></td>
+            </tr>
+            <tr>
+              <td><label for="acc">Type Of Account : </label></td>
+              <td>
+                <input required type="radio" id="free" name="acc" value="free" />
+                <label for="free">Free</label>
+                <input required type="radio" id="premium" name="acc" value="premium" />
+                <label for="premium">Premium</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="sub-button"><button>Register</button></td>
+            </tr>
+          </form>
+        </table>
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      .content {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        padding: 7px 25px;
+      }
+      .form-sec {
+        margin-top: 10%;
+        padding: 80px 50px;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </body>
+</html>

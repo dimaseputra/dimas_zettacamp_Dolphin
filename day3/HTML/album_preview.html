@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Preview Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <h2 class="logo">Hi, Admin</h2>
+      <ul>
+        <li class="navlink"><a href="profile.html">/Profile</a></li>
+        <li class="navlink"><a href="song_listing.html">/Song Listing</a></li>
+        <li class="navlink Active"><a href="#">/Album Preview</a></li>
+      </ul>
+    </div>
+
+    <div class="album">
+      <div class="container-album">
+        <h1>This Is Your Album List</h1>
+        <br />
+        <table border="1" cellspacing="0">
+          <tr>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Name Of Artist</th>
+            <th>Years of Creation</th>
+            <th>City</th>
+            <th>Song</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td><img src="/Assets/img/smoga.jpg" alt="Lagu 1" /></td>
+            <td style="width: 400px; text-align: left">
+              Nosstress is an acoustic indie band from Bali, Indonesia. This group consists of Man Angga and Guna Warma (Kupit). Initially,
+              Nosstress only performed covers of acoustic versions of songs until finally releasing her original work wrapped in the blues
+              and Balinese folk genres.
+            </td>
+            <td>Nosstress</td>
+            <td>2020</td>
+            <td style="width: 100px">bali</td>
+            <td style="text-align: left; width: 260px">
+              <ol style="margin-left: 20px">
+                <li>Semoga ya</li>
+                <li>Istirahat</li>
+                <li>Pegang Tanganku</li>
+              </ol>
+            </td>
+            <td>Rp. 250.000/album</td>
+          </tr>
+          <tr>
+            <td><img src="/Assets/img/redbone.jpg" alt="Lagu 2" /></td>
+            <td style="width: 400px; text-align: left">
+              Redbone is an American rock band formed in Los Angeles, California, in 1969 by brothers Pat and Lolly Vegas. All members
+              during their commercial peak and success were of Mexican American and Native American heritage, which was heavily reflected in
+              their songs, stage costumes, and album art.
+            </td>
+            <td>Redbone</td>
+            <td>1974</td>
+            <td style="width: 100px">Los Angeles</td>
+            <td style="text-align: left; width: 260px">
+              <ol style="margin-left: 20px">
+                <li>When You Got Trouble</li>
+                <li>Come and Get Your Love</li>
+                <li>Wovoka</li>
+              </ol>
+            </td>
+            <td>Rp. 1.500.000/album</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* navbar */
+      .navbar {
+        padding: 15px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(48, 47, 47);
+        color: white;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .navbar ul li {
+        padding: 0 20px;
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar .Active {
+        background-color: rgb(70, 70, 70);
+      }
+
+      table {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .container-album {
+        padding-top: 20px;
+        text-align: center;
+      }
+      td,
+      th {
+        padding: 10px;
+      }
+    </style>
+  </body>
+</html>
