@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* color */
+.bg-black{
+	background-color: #000000;
+}
+.bg-white-c{
+	background-color: #FAFAFA;
+}
+.bg-light-gray{
+	background-color: #C0C0C0;
+}
+.bg-dark-gray{
+	background-color: #343434;
+}
+.bg-none{
+	background-color: transparent;
+}
+.text-black{
+	color: #000000;
+}
+.text-white{
+	color: #FAFAFA;
+}
+.text-light-gray{
+	color: #C0C0C0;
+}
+.text-dark-gray{
+	color: #343434;
+}
+.ml-r{
+	padding: 0 5%;
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+/* content */
+li{
+    padding: 10px;
+}
+.banner{
+    height: 90vh;
+    padding-top: 9vh;
+}
+.none{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    background-color: white;
+}
+/* .greeting{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    z-index: 1;
+} */
+.greeting p{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding-top: 20vh;
+    padding-left: 200px;
+    margin-left: -200px;
+    padding-right: 1046px;
+    left: 90px;
+    background: linear-gradient(90deg, #070707, #00000083);
+    height: 57vh;
+    width: 40vw;
+}
+.greeting-text{
+    font-size: 70px;
+}
+.button-shop{
+    position: absolute;
+    z-index: 1;
+    color: black;
+    margin-top: 530px;
+    left: 90px;
+
+}
+video{
+    width: 100%;
+    filter: brightness(50%);
+    border: none;
+    z-index: -1;
+}
+
+.intro-text{
+    text-align: center;
+    padding: 47px;
+}
+
+.container-item{
+    height: 40vh;
+}
+
+.container-item>.intro{
+    padding-top: 20px;
+    text-align: center;
+}
+.card{
+    /* background-color: red; */
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    /* border: 1px solid lightgray; */
+}
+.card img{
+    width: 200px;
+}
+.cont-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.button{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+.container-btn{
+        display: flex;
+    justify-content: center;
+}
+.web-desc{
+    height: 100vh;
+    
+}
+.left>img{
+width: 50vw;
+}
+
+.web-desc{
+    flex-direction: row;
+    align-items: center;
+}
+.right>p{
+    width: 700px;
+}
+
+/* footer */
+.footer{
+    height: 6vh;
+    text-align: center;
+}
+.footer>h5{
+    padding-top: 20px;
+ 
+}
+
+
+/* shopinglist */
+.product-list{
+    /* height: 100vh; */
+    padding: 9vh 40px 0 40px;
+}
+.header-shopinglist{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px  50px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.cont-product{
+    flex: 1;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 20px;
+    min-width: 500px;
+    min-height: 750px;
+    max-width: 500px;
+    max-height: 750px;
+    margin: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0px 8px 44px -20px rgba(0,0,0,0.13);
+    /* box-sizing: border-box; */
+
+}
+.cont-product button {
+    margin: 40px 35%;
+    background-color: #343434;
+}
+.cont-product img{ 
+    height: 300px;
+    width: 300px;
+    padding: 50px 19%;
+    
+}
+.cont-product p{
+    padding: 5px 30px;
+    color: rgb(133, 132, 132);
+    font-size: 1.2rem;
+}
+.cont-product h2{
+    padding: 20px 30px;
+    border-top: 1px solid rgb(133, 132, 132);
+    color: rgb(56, 56, 56);
+}
+.add-button{
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* additem */
+.container-addItem{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.addItem-form{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+margin-bottom: 6px;
+}
+input,
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+}
+button {
+width: 150px;
+padding: 10px;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: rgb(70, 70, 70);
+color: white;
+}
+.dummy{
+    height: 500px;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.dummy>img{
+    height: 300px;
+    width: 300px;
+    padding: 10px 19%;
+}
+.dummy h3 {
+    border-top: 1px solid lightgray;
+    padding:10px 25px;
+}
+.dummy>p{
+    padding: 10px 25px;
+}
+.about-me{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-me p{
+    padding: 20px 50px;
+}
+.about-me h2{
+    padding: 0 50px;
+}
+.about-me img{
+    padding: 0 50px;
+}
+.about-me-text button{
+    margin-left: 50px;
+}

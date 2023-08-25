@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Item Page</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <div class="container-header bg-white-c" style="height: 9v; width: 100%">
+      <div class="header bg-none">
+        <div class="menu" style="display: flex; flex-direction: row; justify-content: space-between; padding: 30px 5%">
+          <h2 class="text-dark-gray">Shopme</h2>
+          <ul style="display: flex; flex-direction: row; list-style-type: none; align-items: center" class="text-dark-gray">
+            <li><a href="index.html" style="text-decoration: none; color: inherit">/Home</a></li>
+            <li><a href="shoping-list.html" style="text-decoration: none; color: inherit">/Shoping List</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-item">
+      <h3 style="padding-top: 20px; text-align: center">Add Some Item</h3>
+      <div class="container-addItem">
+        <div class="addItem-form">
+          <form action="shoping-list.html">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Name Of Item" required />
+            </div>
+            <div class="form-group">
+              <label for="desc">Description:</label>
+              <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+              <!-- <input type="text" id="desc" name="desc" placeholder="Description" required /> -->
+            </div>
+            <div class="form-group">
+              <label for="name">Choose Image :</label>
+              <input type="file" id="name" name="name" required />
+            </div>
+            <a href="shoping-list.html"> <button class="bg-light-gray text-dark-gray">Add Item</button></a>
+          </form>
+        </div>
+        <div class="dummy">
+          <img src="asset/img/1.png" alt="" />
+          <h3>Title here</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem accusamus suscipit quibusdam neque reiciendis magni in delectus
+            similique maxime enim. Ipsum error iusto quia odio!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
