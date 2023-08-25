@@ -1,0 +1,24 @@
+.ext-cont{
+    padding-top: 150px;
+}
+.ext-cont > img{
+    border-radius: 1000px;
+    width: 10%;
+    margin: 20px 45%;
+}
+.desc{
+    text-align: center;
+    padding: 0 600px;
+}
+p{
+    font-size: 15;
+}
+.univ, .maj{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+.fav, .lang{
+    font-size: 12px;
+    color: red;
+}

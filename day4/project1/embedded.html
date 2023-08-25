@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Styling</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="cont-table">
+        <div class="table-one">
+          <h3>First Table</h3>
+          <table>
+            <tr>
+              <th>Hobby</th>
+              <th>desciption</th>
+            </tr>
+            <tr>
+              <td>playing game</td>
+              <td>I haven't played many games, one of which is Mekorama</td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Learning design is very fun because it trains the left brain.</td>
+            </tr>
+            <tr>
+              <td>fishing</td>
+              <td>for those who like nature definitely like fishing too.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-two">
+          <h3>Second Table</h3>
+          <table>
+            <tr>
+              <th>movie title</th>
+              <th>author</th>
+              <th>desciption</th>
+            </tr>
+            <tr>
+              <td>dr. strange</td>
+              <td>Marvel Studio</td>
+              <td>dr. strange and his failed love story and how he got his powers.</td>
+            </tr>
+            <tr>
+              <td>spiderman no way home</td>
+              <td>Marvel studio</td>
+              <td>Spiderman wants to erase everyone's memory of who is behind Spiderman's mask.</td>
+            </tr>
+            <tr>
+              <td>ms marvel series</td>
+              <td>marvel x disney+</td>
+              <td>how khamala khan maintains his bracelet and seeks identity.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-three">
+          <h3>Third Table</h3>
+          <table>
+            <tr>
+              <th>Song Title</th>
+              <th>Duration</th>
+              <th>Artist</th>
+            </tr>
+            <tr>
+              <td>Semoga Ya</td>
+              <td>03.48</td>
+              <td>Nosstress</td>
+            </tr>
+            <tr>
+              <td>Istirahat</td>
+              <td>03.35</td>
+              <td>Nosstress</td>
+            </tr>
+            <tr>
+              <td>Come And Get Your Love</td>
+              <td>03.28</td>
+              <td>Redbone</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- internal css -->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      h3 {
+        margin-top: 60px;
+      }
+      /* .cont-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      } */
+      .table-one,
+      .table-two,
+      .table-three {
+        margin-top: 20px;
+      }
+      .table-one table tr:nth-child(2) {
+        background-color: green;
+        color: white;
+      }
+      .table-two table tr:nth-child(3) {
+        background-color: red;
+        color: white;
+      }
+      .table-three table tr:nth-child(4) {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </body>
+</html>
